@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+ul,ol{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.sub-title{
+    font-size: 1.8rem;
+}
+#hero-images{
+    background: url('/images/bg1.png') no-repeat top center;
+}
+
+#hero-images .content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+#hero-images .content .title{
+    font-size: 4.5rem;
+    width: 50vw;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    widows: 100%;
+}
+
+#header nav{
+    padding: 2.5rem 6rem;
+    display: flex;
+    font-size: 2rem;
+}
+
+.logo{
+    display: block;
+    max-width: 200px;
+}
+.logo img{
+    width: 100px;
+}
+#header nav .main-menu{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+#header nav .main-menu li{
+    list-style: none;
+}
+#header nav .main-menu li a{
+    display: block;
+    margin-right: 2.5rem;
+    color: #fff;
+    text-decoration: none;  
+}

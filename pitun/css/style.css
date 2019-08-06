@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body{
+    font-family: sans-serif;
+}
+header{
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+}
+header .row{
+    align-items: center;
+}
+/* .logo{
+    display: block;
+    max-width: 180px;
+}
+.logo img{
+    width: 50%;
+} */
+header #home-nav{
+    display: flex;
+    align-items: center;
+}
+.main-menu{
+    display: flex;
+    align-items: center;
+}
+.main-menu li{
+    list-style: none;
+}
+.main-menu li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+}
+.search-box{
+    margin-left: auto;
+}
+.search-box input{
+    height: 25px;
+    border: none;
+    outline: 0;
+}
+.search-box .sb-sbm{
+    width: 45px;
+    color: transparent;
+    background: transparent url(../images/icons8-search-50.png) no-repeat center;
+    background-size: contain;
+}
+.search-box .sb-text{
+    border-radius: 20px;
+    line-height: 25px;
+    width: 0;
+    transition: .5s;
+}
+.menu-trigger{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+.menu-trigger span{
+    display: block;
+    background: #fff;
+    width: 100%;
+    height: 4px;
+    margin: 5px 0;
+    position: absolute;
+    border-radius: 10px;
+    transition: .5s;
+}
+.menu-trigger .span-1{
+    top: 1px;
+}
+.menu-trigger .span-2{
+    top: 15px;
+    transform: translateY(-170%);
+}
+.menu-trigger .span-3{
+    bottom: 1px;
+}
+
+.menu-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #f1f1f1;
+    padding: 15px 185px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: translateY(20px)
+}
+.menu-container  #menu li{
+    float: left;
+    width: 190px;
+    list-style: none;
+    margin: 0 5px;
+}
+.menu-container  #menu{
+    margin: 0 -90px;
+}
+.menu-container #menu li a{
+    text-decoration: none;
+    color: #555;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: block;
+}
+.menu-container #menu .sub-menu li{
+    float: none;
+    margin: 0;
+}
+.menu-container #menu .sub-menu li a{
+    border: none;
+}
+
+/* add class toggle */
+.menu-container.open{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0)
+}
+
+.menu-trigger .span-1.open{
+    top: 30%;
+    transform: rotate(140deg);
+}
+.menu-trigger .span-3.open{
+    top: 30%;
+    transform: rotate(-140deg);
+}
+.menu-trigger .span-2.open{
+    width: 0;
+    opacity: 0;
+}
+
+.sb-text.open{
+    width: 200px;
+    padding: 0 10px;
+}
+#hero-image{
+    background: url(../images/logo\ pitun.jpg) no-repeat center;
+    padding: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#hero-image .hero-content{
+    color: #fff;
+}
+.hero-content h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    text-shadow: 0 10px 10px #000, 0 10px 10px #fff;
+}
+.hero-content p:last-child{
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.hero-content p:last-child::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 1px;
+    background: #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-xn{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+}
+
+.btn-xn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.btn-xn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    opacity: .5;
+    transition: .5s;
+}
+.btn-xn:hover::after{
+    width: 100%;
+}
+
+.section-padding{
+    padding: 50px 0;
+}
+.title, .sub-title{
+    color: #000;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+#gioi-thieu .item{
+    transition: .5s;
+}
+#gioi-thieu .item figcaption{
+    padding: 0 20px 40px;
+}
+#gioi-thieu .item .btn-xn{
+    color: #555;
+    border-color: #555;
+}
+#gioi-thieu .item .btn-xn::after{
+    background: #555;
+}
+#gioi-thieu .item h3{
+    font-size: 18px;
+    margin: 20px 0;
+}
+#gioi-thieu .item p{
+    color: #555;
+    font-size: 15px;
+}
+#gioi-thieu .item:hover{
+    box-shadow: 0 5px 10px #ccc;
+    transform: translateY(-5px);
+}
+
+#gioi-thieu2 {
+    background: url('../images/logo\ pitun.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#gioi-thieu2 .title, #gioi-thieu2 .sub-title {
+    color: #fff;
+}
+#gioi-thieu2 .sub-title{
+    margin-bottom: 0;
+}
